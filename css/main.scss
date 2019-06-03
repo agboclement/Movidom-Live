@@ -157,6 +157,13 @@ body {
 }
 
 /* API search results */
+.search-container {
+  position: absolute;
+  z-index: 11;
+  top: 75px;
+  height: 10000px;
+}
+
 .form-control {
   height: 35px;
   font-family: var(--text-font);
@@ -178,10 +185,14 @@ body {
 
 /* Style for API Search bar */
 #movies {
+  width: 100vw;
   padding-left: 10px;
+  padding-right: 20px;
   background: black;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
 }
 
@@ -202,6 +213,7 @@ body {
   height: 350px;
   width: 250px;
 }
+
 /* End of API Search bar */
 /* End of API search results */
 
